@@ -36,4 +36,12 @@ class  Person
     function info(){
         echo "Author : ". self::AUTHOR . PHP_EOL;
     }
+
+    /**
+     *Function destructor
+     */
+    function __destruct()
+    {
+        echo "Objek Person $this->name is desroyed".PHP_EOL;
+    }
 }
